@@ -1,0 +1,13 @@
+{
+  "authenticate": {
+    "schema": {
+      "method": "GET",
+      "host": "<%= context.domain %>.freshdesk.com",
+      "path": "/api/v2/agents/me",
+      "headers": {
+        "Authorization": "Basic <%= encode(context.apiKey) %>",
+        "Content-Type": "application/json"
+      }
+    }
+  }
+}
